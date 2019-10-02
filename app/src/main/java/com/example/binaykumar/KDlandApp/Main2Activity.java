@@ -1,4 +1,4 @@
-package com.example.binaykumar.landcb;
+package com.example.binaykumar.KDlandApp;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -76,14 +76,14 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
 
            case R.id.spn2:
 
-        com.example.binaykumar.landcb.DatabaseAccess databaseAccess1 = com.example.binaykumar.landcb.DatabaseAccess.getInstance(this);
+        com.example.binaykumar.KDlandApp.DatabaseAccess databaseAccess1 = com.example.binaykumar.KDlandApp.DatabaseAccess.getInstance(this);
         databaseAccess1.open();
         payments1.setText((CharSequence) databaseAccess1.res2((String) CRno.getSelectedItem().toString()));
         databaseAccess1.close();
                break;
 
            case R.id.spn3:
-               com.example.binaykumar.landcb.DatabaseAccess databaseAccess2 = com.example.binaykumar.landcb.DatabaseAccess.getInstance(this);
+               com.example.binaykumar.KDlandApp.DatabaseAccess databaseAccess2 = com.example.binaykumar.KDlandApp.DatabaseAccess.getInstance(this);
                databaseAccess2.open();
                payments1.setText((CharSequence) databaseAccess2.res3((String) claimant.getSelectedItem().toString()));
                databaseAccess2.close();

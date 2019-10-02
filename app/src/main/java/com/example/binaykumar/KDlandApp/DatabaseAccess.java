@@ -1,4 +1,4 @@
-package com.example.binaykumar.landcb;
+package com.example.binaykumar.KDlandApp;
 /**
  * Created by Binay Kumar on 21-01-2018.
  */
@@ -10,18 +10,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.text.Editable;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.text.Editable;
-import android.util.Log;
-import android.view.View;
 
-import java.util.ArrayList;
-import java.util.List;
+import android.util.Log;
 
 /**
  * Created by Binay Kumar on 15-01-2018.
@@ -34,7 +25,7 @@ public class DatabaseAccess {
     private static DatabaseAccess instance;
 
     private DatabaseAccess(Context context) {
-        this.openHelper = new com.example.binaykumar.landcb.DatabaseOpenHelper(context);
+        this.openHelper = new com.example.binaykumar.KDlandApp.DatabaseOpenHelper(context);
     }
     public static DatabaseAccess getInstance(Context context) {
         if (instance == null) {

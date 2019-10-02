@@ -1,4 +1,4 @@
-package com.example.binaykumar.landcb;
+package com.example.binaykumar.KDlandApp;
 
 import org.junit.Test;
 

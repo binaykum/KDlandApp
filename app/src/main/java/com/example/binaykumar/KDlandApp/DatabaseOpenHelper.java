@@ -1,7 +1,6 @@
 
-package com.example.binaykumar.landcb;
+package com.example.binaykumar.KDlandApp;
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
 
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 

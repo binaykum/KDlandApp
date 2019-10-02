@@ -1,4 +1,4 @@
-package com.example.binaykumar.landcb;
+package com.example.binaykumar.KDlandApp;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,13 +13,9 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.binaykumar.landcb.DatabaseAccess;
 
 import java.util.ArrayList;
 import java.util.List;
