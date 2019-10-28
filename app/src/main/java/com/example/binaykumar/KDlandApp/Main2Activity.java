@@ -27,7 +27,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_main2);
 
 
-        Toast.makeText(this,"BINAY KUMAR, AGM (Mining)", Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"NTPC, Coal Mining", Toast.LENGTH_LONG).show();
         Button back=(Button)findViewById(R.id.btn4);
         back.setOnClickListener(this);
         CRno= (Spinner)findViewById(R.id.spn2);
