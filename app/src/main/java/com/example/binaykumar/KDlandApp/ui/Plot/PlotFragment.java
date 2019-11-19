@@ -1,4 +1,4 @@
-package com.example.binaykumar.KDlandApp.ui.Khata;
+package com.example.binaykumar.KDlandApp.ui.Plot;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,17 +13,17 @@ import android.arch.lifecycle.ViewModelProviders;
 
 import com.example.binaykumar.KDlandApp.R;
 
-public class DashboardFragment extends Fragment {
+public class PlotFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
+    private PlotViewModel plotViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                ViewModelProviders.of(this).get(DashboardViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        dashboardViewModel.getText().observe(this, new Observer<String>() {
+        plotViewModel =
+                ViewModelProviders.of(this).get(PlotViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_plot, container, false);
+        final TextView textView = root.findViewById(R.id.text_home);
+        plotViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
