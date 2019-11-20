@@ -8,9 +8,12 @@ public class PlotViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
+
     public PlotViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is Plot fragment");
+
+
     }
 
     public LiveData<String> getText() {
