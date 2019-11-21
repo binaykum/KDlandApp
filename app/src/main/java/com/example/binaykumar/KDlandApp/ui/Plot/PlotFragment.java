@@ -125,8 +125,8 @@ public class PlotFragment extends Fragment implements View.OnClickListener, Adap
 
    @Override
     public void onClick(View v) {
-        // TODO:  InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-     //TODO:    inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+       InputMethodManager inputManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputManager.hideSoftInputFromWindow(getView().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
         if (input_plot_no.getText().length() == 0) {
             Toast.makeText(getContext(), "Pl enter plot no", Toast.LENGTH_SHORT).show();
         } else {
@@ -138,7 +138,8 @@ public class PlotFragment extends Fragment implements View.OnClickListener, Adap
                 case R.id.btn1:
                     payment_details.setVisibility(View.INVISIBLE);
                     detailed.setVisibility(View.INVISIBLE);
-// TODO:                    output.setText((CharSequence) databaseAccess.res((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
+// TODO:      this output we have to take to resulttext in result fragment.              output.setText((CharSequence) databaseAccess.res((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
+
                     if (!databaseAccess.res((String) village_list.getSelectedItem().toString(), input_plot_no.getText()).contains("paidArea:-null")) {
                         payment_details.setVisibility(View.VISIBLE);
                         detailed.setVisibility(View.VISIBLE);
@@ -152,14 +153,14 @@ public class PlotFragment extends Fragment implements View.OnClickListener, Adap
                 case R.id.btn2:
                     output.setText((CharSequence) databaseAccess.res1((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
 
-
+// TODO:      this output we have to take to resulttext in result fragment.
                     //List<String> claimants = databaseAccess.getClaimants();
 
                     databaseAccess.close();
 
                     break;
                 case R.id.btn3:
-
+//TODO this output should open new fragmetn again to be made. but it is going to new activity so let it go.
                     List<String> CRnos = databaseAccess.getCRnos((String) village_list.getSelectedItem().toString(), input_plot_no.getText());
                     List<String> claimants = databaseAccess.getClaimants((String) village_list.getSelectedItem().toString(), input_plot_no.getText());
 

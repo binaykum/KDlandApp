@@ -9,5 +9,5 @@
         android:id="@+id/resultFragment"
         android:name="com.example.binaykumar.KDlandApp.ui.Result.ResultFragment"
         android:label="result_fragment"
-        tools:layout="@layout/result_fragment" />
+        tools:layout="@layout/fragment_result" />
 </navigation>

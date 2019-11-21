@@ -22,7 +22,7 @@ public class KhataFragment extends Fragment {
         khataViewModel =
                 ViewModelProviders.of(this).get(KhataViewModel.class);
         View root = inflater.inflate(R.layout.fragment_khata, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
+        final TextView textView = root.findViewById(R.id.textView3);
         khataViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
