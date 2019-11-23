@@ -1,5 +1,6 @@
 package com.example.binaykumar.KDlandApp.ui.Plot;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -31,6 +32,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PlotFragment extends Fragment implements View.OnClickListener, AdapterView.OnItemSelectedListener {
+ OnMessage onMessage;
+    public  interface OnMessage {
+public  void onMessageSent (String message);
+
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        Activity activity =(Activity) context;
+        try {
+        onMessage= (OnMessage) activity;
+        }catch ( ClassCastException e){
+            throw new ClassCastException(activity.toString()+"message from onAttach method");
+
+
+        }
+    }
 
     // private EditText input_plot_no;
     private TextView village_name;
@@ -48,8 +67,7 @@ public class PlotFragment extends Fragment implements View.OnClickListener, Adap
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        plotViewModel =
-                ViewModelProviders.of(this).get(PlotViewModel.class);
+        plotViewModel = ViewModelProviders.of(this).get(PlotViewModel.class);
         View root = inflater.inflate(R.layout.fragment_plot, container, false);
 
 
@@ -138,7 +156,12 @@ public class PlotFragment extends Fragment implements View.OnClickListener, Adap
                 case R.id.btn1:
                     payment_details.setVisibility(View.INVISIBLE);
                     detailed.setVisibility(View.INVISIBLE);
-// TODO:      this output we have to take to resulttext in result fragment.              output.setText((CharSequence) databaseAccess.res((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
+    CharSequence message =((CharSequence) databaseAccess.res((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
+
+                 //   String message ="binay kumar";
+                    onMessage.onMessageSent((String) message);
+
+                    // TODO:           output.setText((CharSequence) databaseAccess.res((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
 
                     if (!databaseAccess.res((String) village_list.getSelectedItem().toString(), input_plot_no.getText()).contains("paidArea:-null")) {
                         payment_details.setVisibility(View.VISIBLE);
@@ -151,7 +174,8 @@ public class PlotFragment extends Fragment implements View.OnClickListener, Adap
                     databaseAccess.close();
                     break;
                 case R.id.btn2:
-                    output.setText((CharSequence) databaseAccess.res1((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
+                    message=((CharSequence) databaseAccess.res1((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
+                    onMessage.onMessageSent((String) message);
 
 // TODO:      this output we have to take to resulttext in result fragment.
                     //List<String> claimants = databaseAccess.getClaimants();
@@ -166,13 +190,13 @@ public class PlotFragment extends Fragment implements View.OnClickListener, Adap
 
 
                     Intent intent;
-                    intent = new Intent(getContext(), Main2Activity.class); // to change this main2Activity
+                    intent = new Intent(getActivity(), Main2Activity.class); // to change this main2Activity
                     intent.putStringArrayListExtra("CRnos", (ArrayList<String>) CRnos);
                     intent.putStringArrayListExtra("claimants", (ArrayList<String>) claimants);
                     startActivity(intent);
                     break;
                 default:
-                    // TODO:   setContentView(R.layout.activity_main);
+                    //TODO   setContentView(R.layout.activity_main);
 
             }
             databaseAccess.close();

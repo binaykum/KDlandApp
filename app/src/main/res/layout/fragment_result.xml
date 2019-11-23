@@ -6,14 +6,6 @@
     tools:context=".ui.Result.ResultFragment">
 
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="433dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text=" testtext" />
 
     <TextView
         android:id="@+id/textView5"
@@ -29,7 +21,7 @@
         android:paddingLeft="10dp"
         android:paddingBottom="8dp"
         android:paddingTop="6dp"
-        android:text="Raman"
+        android:text="Some error"
         android:gravity="start|top"
         android:scrollbars="vertical"
         android:textSize="18sp" />

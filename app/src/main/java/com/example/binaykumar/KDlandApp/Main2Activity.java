@@ -61,7 +61,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
 
         Intent intent;
-        intent=new Intent(this,MainActivity.class);
+        intent=new Intent(this,Main3Activity.class);
         startActivity(intent);
 
 

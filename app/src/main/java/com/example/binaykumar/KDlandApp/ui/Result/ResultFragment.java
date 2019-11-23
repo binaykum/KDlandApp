@@ -8,11 +8,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.binaykumar.KDlandApp.R;
 
 public class ResultFragment extends Fragment {
-
+private TextView result;
+String message="Welcome to Keredari";
     private ResultViewModel mViewModel;
 
     public static ResultFragment newInstance() {
@@ -22,7 +24,16 @@ public class ResultFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_result, container, false);
+
+
+        View root= inflater.inflate(R.layout.fragment_result, container, false);
+         result= (TextView)root.findViewById(R.id.textView5);
+         Bundle bundle= getArguments();
+          message= bundle.getString("message");
+             result.setText(message);
+
+        return root;
+
     }
 
     @Override

@@ -2,6 +2,8 @@ package com.example.binaykumar.KDlandApp;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
 import androidx.navigation.NavController;
@@ -9,7 +11,10 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-public class Main3Activity extends AppCompatActivity {
+import com.example.binaykumar.KDlandApp.ui.Plot.PlotFragment;
+import com.example.binaykumar.KDlandApp.ui.Result.ResultFragment;
+
+public class Main3Activity extends AppCompatActivity implements PlotFragment.OnMessage {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,4 +34,19 @@ public class Main3Activity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onMessageSent(String message) {
+
+        ResultFragment resultFragment = new ResultFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("message", message);
+        resultFragment.setArguments(bundle);
+
+        FragmentTransaction fragmentTransaction =getSupportFragmentManager()
+                                            .beginTransaction()
+                                            .replace(R.id.container1,resultFragment, null)
+                                      .addToBackStack(null);
+        fragmentTransaction.commit();
+
+    }
 }
