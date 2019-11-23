@@ -253,4 +253,75 @@ public class DatabaseAccess {
 
 
     }
+
+    public List<String> getKhatas(String item) {
+
+        List<String> list = new ArrayList<>();
+        Cursor cursor = database.rawQuery("SELECT  distinct TRIM(khataNo)  FROM  plot_master where villagename='"+item+"' ORDER BY LENGTH(plotno),  plotNo", null);
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            list.add(cursor.getString(0));
+            cursor.moveToNext();
+        }
+
+
+        cursor.close();
+        return list;
+
+
+    }
+    public String res4(String v, Editable p){
+        //System.out.println(v+p);
+
+        Cursor c=database.rawQuery("SELECT * FROM plot_master WHERE (villageName= '"+ v +"')" +" AND"+ "(plotNo='"+p+"')", null);
+
+        c.moveToFirst();
+        switch (c.getCount()) {
+            case 0 :
+                c.close();
+                return "No such Khata notified in this village. "+"\n"+"contact Mr Ramakant behra";
+
+
+
+            //break;
+            case 1:
+
+                Cursor c1=database.rawQuery("SELECT SUM(paidArea)  FROM payment WHERE (villageName= '"+ v +"')" +" AND" + "(plotNo='"+p+"')", null);
+                int i=1;
+                String s="";
+                // Cursor c=database.rawQuery("SELECT * FROM plot_master ", null);
+                c.moveToFirst();c1.moveToFirst();
+                while (i != c.getColumnCount()) {
+                    s= s+ c.getColumnName(i)+":- "+c.getString(i)+"\n";
+                    ++i;
+                }
+                //s=s+"(Row no-"+c.getString(0)+")";
+                s=s+"paidArea:-"+c1.getString(0);
+
+                c.close();
+                c1.close();
+
+                return (s);
+
+
+            // return "No of rows/records: " + c.getCount() + "\n" + "Vill name:- " + c.getString(c.getColumnIndex("villageName")) + "\n" + "Plot No:- " + c.getString(c.getColumnIndex("plotNo")) +"\n"+"Khata No:-";
+            //    +c.getInt(c.getColumnIndex("khataNo")) +"\n"+"Acquired area:-" ;
+
+            //     +  c.getDouble(c.getColumnIndex("acqdArea"))+"acres"+ "\n"+"Paid Area:-" +c.getDouble(c.getColumnIndex("paidArea"))+"acres"+"\n";
+
+            // break;
+            default:
+                // System.out.println(c.getCount());
+                String st= c.getString(0);
+                String vt=String.valueOf(c.getCount());
+                c.close();
+                return vt+" times this plot in this village. Seems some error. Contact Mr Ramakant behra \n"+st;
+
+        }
+    }
+
+
+
+
+
 }

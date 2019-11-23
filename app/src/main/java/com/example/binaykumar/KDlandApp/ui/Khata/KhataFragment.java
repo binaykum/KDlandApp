@@ -157,12 +157,12 @@ public class KhataFragment extends Fragment  implements View.OnClickListener , A
             // TODO:  output.setVisibility(View.VISIBLE);
             DatabaseAccess databaseAccess = DatabaseAccess.getInstance(getActivity());
             databaseAccess.open();
-            Log.i("message to binay ", "database opening successful");
+        //    Log.i("message to binay ", "database opening successful");
             switch (v.getId()) {
                 case R.id.btn1:
                     payment_details.setVisibility(View.INVISIBLE);
                     detailed.setVisibility(View.INVISIBLE);
-                    CharSequence message =((CharSequence) databaseAccess.res((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
+                    CharSequence message =((CharSequence) databaseAccess.res4((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
 
                     //   String message ="binay kumar";
                     onMessage.onMessageSent((String) message);
@@ -221,7 +221,7 @@ public class KhataFragment extends Fragment  implements View.OnClickListener , A
         DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getActivity());
         databaseAccess.open();
 
-        List<String> plots = databaseAccess.getPlots(item);
+        List<String> plots = databaseAccess.getKhatas(item);
         ArrayAdapter plotList= new ArrayAdapter(getActivity(),  R.layout.support_simple_spinner_dropdown_item,plots);
         input_plot_no.setAdapter(plotList);
         input_plot_no.setThreshold(1);
