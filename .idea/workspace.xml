@@ -13,10 +13,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/databases/landCBCMP2.db" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/databases/landKDCMP.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/DatabaseAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/DatabaseAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/DatabaseOpenHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/DatabaseOpenHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/ui/Khata/KhataFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/ui/Khata/KhataFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_khata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_khata.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,28 +45,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="12" column="55" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_khata.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
+            <state relative-caret-position="816">
               <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
             </state>
           </provider>
@@ -75,47 +57,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/DatabaseAccess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="251" column="20" lean-forward="true" selection-start-line="251" selection-start-column="20" selection-end-line="251" selection-end-column="20" />
+            <state relative-caret-position="238">
+              <caret line="193" column="144" selection-start-line="193" selection-start-column="144" selection-end-line="193" selection-end-column="144" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_result.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main3.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
           <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/ui/Khata/KhataFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
-              <folding>
-                <element signature="e#4835#5000#0" expanded="true" />
-                <element signature="e#4999#5000#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="302">
+              <caret line="194" column="73" selection-start-line="194" selection-start-column="73" selection-end-line="194" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -125,10 +83,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="33" column="74" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="110" />
-              <folding>
-                <element signature="e#4319#4484#0" expanded="true" />
-                <element signature="e#4483#4484#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -192,6 +146,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_result.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_khata.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/DatabaseOpenHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/ui/Khata/KhataFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/DatabaseAccess.java" />
       </list>
@@ -208,6 +163,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="KDlandApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KDlandApp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
           <expand>
@@ -225,73 +193,6 @@
               <item name="C:\Users\binay\Documents\GitHub\KDlandApp" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="build" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="KDlandApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KDlandApp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="KDlandApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="KDlandApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
-            </path>
-            <path>
-              <item name="KDlandApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="KDlandApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="KDlandApp" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KDlandApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="KDlandApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="KDlandApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="KDlandApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
-              <item name="strings" type="c431d0b8:AndroidResGroupNode" />
-            </path>
-            <path>
-              <item name="KDlandApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
@@ -420,7 +321,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.5010482" side_tool="true" weight="0.31983805" />
-      <window_info active="true" id="Project" order="1" sideWeight="0.4989518" visible="true" weight="0.24858299" />
+      <window_info id="Project" order="1" sideWeight="0.4989518" weight="0.24858299" />
       <window_info id="Structure" order="2" sideWeight="0.5010482" side_tool="true" weight="0.31983805" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -435,7 +336,7 @@
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3285968" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50364375" side_tool="true" weight="0.28148147" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.3285968" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49635628" visible="true" weight="0.27962962" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49635628" weight="0.27962962" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="bottom" id="Find" order="9" sideWeight="0.49635628" weight="0.32777777" />
       <window_info anchor="bottom" id="Flutter Performance" order="10" side_tool="true" />
@@ -451,7 +352,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Captures" order="0" sideWeight="0.5010482" side_tool="true" weight="0.31983805" />
-      <window_info active="true" id="Project" order="1" sideWeight="0.4989518" visible="true" weight="0.31983805" />
+      <window_info id="Project" order="1" sideWeight="0.4989518" visible="true" weight="0.24858299" />
       <window_info id="Structure" order="2" sideWeight="0.5010482" side_tool="true" weight="0.31983805" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -459,14 +360,14 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" weight="0.32955465" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.32592592" />
       <window_info anchor="bottom" id="Logcat" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50364375" side_tool="true" visible="true" weight="0.28148147" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50364375" side_tool="true" weight="0.28148147" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.3285968" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49635628" visible="true" weight="0.28148147" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49635628" weight="0.27962962" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="bottom" id="Find" order="9" sideWeight="0.49635628" weight="0.32777777" />
       <window_info anchor="bottom" id="Flutter Performance" order="10" side_tool="true" />
@@ -495,13 +396,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/navigation/navigation2.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/ui/Plot/PlotViewModel.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/DatabaseOpenHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/ui/Result/ResultViewModel.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_plot.xml" />
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
@@ -551,28 +445,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/ui/Khata/KhataViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/ui/Plot/PlotFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="33" column="74" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="110" />
-          <folding>
-            <element signature="e#4319#4484#0" expanded="true" />
-            <element signature="e#4483#4484#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="204">
           <caret line="12" column="55" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="55" />
         </state>
       </provider>
@@ -580,53 +456,66 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_khata.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
+        <state relative-caret-position="816">
           <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_result.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/ui/Plot/PlotFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="68">
+          <caret line="33" column="74" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="110" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/ui/Khata/KhataViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml">
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main3.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_result.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="272">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/DatabaseOpenHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/ui/Khata/KhataFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
-          <folding>
-            <element signature="e#4835#5000#0" expanded="true" />
-            <element signature="e#4999#5000#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="302">
+          <caret line="194" column="73" selection-start-line="194" selection-start-column="73" selection-end-line="194" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/binaykumar/KDlandApp/DatabaseAccess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="251" column="20" lean-forward="true" selection-start-line="251" selection-start-column="20" selection-end-line="251" selection-end-column="20" />
+        <state relative-caret-position="238">
+          <caret line="193" column="144" selection-start-line="193" selection-start-column="144" selection-end-line="193" selection-end-column="144" />
         </state>
       </provider>
     </entry>

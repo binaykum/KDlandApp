@@ -163,9 +163,35 @@ public class DatabaseAccess {
 
           };
 
+
+    public List<String> getCRnos1(String v, Editable p) {
+        List<String> list = new ArrayList<>();
+        Cursor cursor = database.rawQuery("SELECT  distinct SUBSTR(CRno,5) FROM  payment WHERE (villageName= '" + v + "')" + " AND" + "(khataNo='" + p + "') ", null);
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            list.add(cursor.getString(0));
+            cursor.moveToNext();
+        }
+        cursor.close();
+        return list;
+
+    };
     public List<String> getClaimants(String v, Editable p) {
         List<String> list = new ArrayList<>();
         Cursor cursor = database.rawQuery("SELECT   SUBSTR(claimantName,1,12) FROM  payment WHERE (villageName= '" + v + "')" + " AND" + "(plotNo='" + p + "') ", null);
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            list.add(cursor.getString(0));
+            cursor.moveToNext();
+        }
+        cursor.close();
+        return list;
+
+
+    };
+    public List<String> getClaimants1(String v, Editable p) {
+        List<String> list = new ArrayList<>();
+        Cursor cursor = database.rawQuery("SELECT   SUBSTR(claimantName,1,12) FROM  payment WHERE (villageName= '" + v + "')" + " AND" + "(khataNo='" + p + "') ", null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             list.add(cursor.getString(0));
@@ -271,10 +297,10 @@ public class DatabaseAccess {
 
     }
     public String res4(String v, Editable p){
-        //System.out.println(v+p);
+        //System.out.println(v+p); for khata searching
 
-        Cursor c=database.rawQuery("SELECT * FROM plot_master WHERE (villageName= '"+ v +"')" +" AND"+ "(plotNo='"+p+"')", null);
-
+        Cursor c=database.rawQuery("SELECT * FROM plot_master WHERE (villageName= '"+ v +"')" +" AND"+ "(khataNo='"+p+"')", null);
+System.out.println("res4  c"+"SELECT * FROM plot_master WHERE (villageName= '"+ v +"')" +" AND"+ "(khataNo='"+p+"')");
         c.moveToFirst();
         switch (c.getCount()) {
             case 0 :
@@ -284,9 +310,9 @@ public class DatabaseAccess {
 
 
             //break;
-            case 1:
+            default:
 
-                Cursor c1=database.rawQuery("SELECT SUM(paidArea)  FROM payment WHERE (villageName= '"+ v +"')" +" AND" + "(plotNo='"+p+"')", null);
+                Cursor c1=database.rawQuery("SELECT SUM(paidArea)  FROM payment WHERE (villageName= '"+ v +"')" +" AND" + "(khataNo='"+p+"')", null);
                 int i=1;
                 String s="";
                 // Cursor c=database.rawQuery("SELECT * FROM plot_master ", null);
@@ -295,6 +321,8 @@ public class DatabaseAccess {
                     s= s+ c.getColumnName(i)+":- "+c.getString(i)+"\n";
                     ++i;
                 }
+
+                System.out.println( "from res4"+"SELECT SUM(paidArea)  FROM payment WHERE (villageName= '"+ v +"')" +" AND" + "(khataNo='"+p+"')");
                 //s=s+"(Row no-"+c.getString(0)+")";
                 s=s+"paidArea:-"+c1.getString(0);
 
@@ -310,14 +338,53 @@ public class DatabaseAccess {
             //     +  c.getDouble(c.getColumnIndex("acqdArea"))+"acres"+ "\n"+"Paid Area:-" +c.getDouble(c.getColumnIndex("paidArea"))+"acres"+"\n";
 
             // break;
-            default:
+   //TODO: something         default:
                 // System.out.println(c.getCount());
-                String st= c.getString(0);
-                String vt=String.valueOf(c.getCount());
-                c.close();
-                return vt+" times this plot in this village. Seems some error. Contact Mr Ramakant behra \n"+st;
+             //   String st= c.getString(0);
+               // String vt=String.valueOf(c.getCount());
+               // c.close();
+               // return vt+" times this plot in this village. Seems some error. Contact Mr Ramakant behra \n"+st;
 
         }
+
+
+    }
+    public String res5(String v, Editable p) {
+
+
+        Cursor c2 = database.rawQuery("SELECT _id, substr(CRno,5),plotNo,paidArea,SUBSTR(claimantName,1,13)  FROM payment WHERE (villageName= '" + v + "')" + " AND" + "(khataNo='" + p + "')", null);
+
+
+
+        //s=s+"(Row no-"+c.getString(0)+")";
+        //s=s+"paidArea:-"+c1.getString(0);
+        int j = 0;
+        String s = "";
+
+        System.out.println(c2.getCount());
+        if (c2 != null) {
+            //   c2.moveToFirst();
+
+            for (c2.moveToFirst(); !c2.isAfterLast();c2.moveToNext()) {
+                s=s+(c2.getPosition()+1)+". ";
+                for (j=1;j!=c2.getColumnCount();++j){
+                    // while (j != c2.getColumnCount()) {
+                    s = s +  c2.getString(j)+" -";
+                    //   ++j;
+
+                }
+                s=s+ "\n";
+                //  c2.moveToNext();
+                Log.i("message to sony","test");
+            } //;
+
+
+            c2.close();
+        }
+
+
+        return (s);
+
     }
 
 

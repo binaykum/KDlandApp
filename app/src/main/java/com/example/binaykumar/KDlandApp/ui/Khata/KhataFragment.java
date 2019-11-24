@@ -169,18 +169,18 @@ public class KhataFragment extends Fragment  implements View.OnClickListener , A
 
                     // TODO:           output.setText((CharSequence) databaseAccess.res((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
 
-                    if (!databaseAccess.res((String) village_list.getSelectedItem().toString(), input_plot_no.getText()).contains("paidArea:-null")) {
+                    if (!databaseAccess.res4((String) village_list.getSelectedItem().toString(), input_plot_no.getText()).contains("paidArea:-null")) {
                         payment_details.setVisibility(View.VISIBLE);
                         detailed.setVisibility(View.VISIBLE);
                     }
-                    if (databaseAccess.res((String) village_list.getSelectedItem().toString(), input_plot_no.getText()).contains("Anil Kumar")) {
+                    if (databaseAccess.res4((String) village_list.getSelectedItem().toString(), input_plot_no.getText()).contains("Anil Kumar")) {
                         payment_details.setVisibility(View.INVISIBLE);
                         detailed.setVisibility(View.INVISIBLE);
                     }
                     databaseAccess.close();
                     break;
                 case R.id.btn2:
-                    message=((CharSequence) databaseAccess.res1((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
+                    message=((CharSequence) databaseAccess.res5((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
                     onMessage.onMessageSent((String) message);
 
 // TODO:      this output we have to take to resulttext in result fragment.
@@ -191,8 +191,8 @@ public class KhataFragment extends Fragment  implements View.OnClickListener , A
                     break;
                 case R.id.btn3:
 //TODO this output should open new fragmetn again to be made. but it is going to new activity so let it go.
-                    List<String> CRnos = databaseAccess.getCRnos((String) village_list.getSelectedItem().toString(), input_plot_no.getText());
-                    List<String> claimants = databaseAccess.getClaimants((String) village_list.getSelectedItem().toString(), input_plot_no.getText());
+                    List<String> CRnos = databaseAccess.getCRnos1((String) village_list.getSelectedItem().toString(), input_plot_no.getText());
+                    List<String> claimants = databaseAccess.getClaimants1((String) village_list.getSelectedItem().toString(), input_plot_no.getText());
 
 
                     Intent intent;
