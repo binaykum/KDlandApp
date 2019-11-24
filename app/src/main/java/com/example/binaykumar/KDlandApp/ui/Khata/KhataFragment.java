@@ -152,7 +152,7 @@ public class KhataFragment extends Fragment  implements View.OnClickListener , A
         InputMethodManager inputManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
         inputManager.hideSoftInputFromWindow(getView().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
         if (input_plot_no.getText().length() == 0) {
-            Toast.makeText(getContext(), "Pl enter plot no", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "Pl enter khata no", Toast.LENGTH_SHORT).show();
         } else {
             // TODO:  output.setVisibility(View.VISIBLE);
             DatabaseAccess databaseAccess = DatabaseAccess.getInstance(getActivity());

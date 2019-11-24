@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,6 +29,7 @@ String message="Welcome to Keredari";
 
         View root= inflater.inflate(R.layout.fragment_result, container, false);
          result= (TextView)root.findViewById(R.id.textView5);
+         result.setMovementMethod(new ScrollingMovementMethod());
          Bundle bundle= getArguments();
           message= bundle.getString("message");
              result.setText(message);
