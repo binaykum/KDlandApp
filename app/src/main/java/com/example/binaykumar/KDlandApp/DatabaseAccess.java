@@ -179,7 +179,7 @@ public class DatabaseAccess {
     };
     public List<String> getClaimants(String v, Editable p) {
         List<String> list = new ArrayList<>();
-        Cursor cursor = database.rawQuery("SELECT   distinct SUBSTR(claimantName,1,12) FROM  payment WHERE (villageName= '" + v + "')" + " AND" + "(plotNo='" + p + "') ", null);
+        Cursor cursor = database.rawQuery("SELECT   distinct SUBSTR(claimantName,1,18) FROM  payment WHERE (villageName= '" + v + "')" + " AND" + "(plotNo='" + p + "') ", null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             list.add(cursor.getString(0));
@@ -192,7 +192,7 @@ public class DatabaseAccess {
     };
     public List<String> getClaimants1(String v, Editable p) {
         List<String> list = new ArrayList<>();
-        Cursor cursor = database.rawQuery("SELECT   distinct SUBSTR(claimantName,1,12) FROM  payment WHERE (villageName= '" + v + "')" + " AND" + "(khataNo='" + p + "') ", null);
+        Cursor cursor = database.rawQuery("SELECT   distinct SUBSTR(claimantName,1,18) FROM  payment WHERE (villageName= '" + v + "')" + " AND" + "(khataNo='" + p + "') ", null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             list.add(cursor.getString(0));
@@ -346,7 +346,7 @@ public class DatabaseAccess {
                 s = s + "\n\n";
 
                 c.moveToFirst();
-                s=s+ "plotNo "+ "acqdArea "+ "paidArea "+" priorY  " + "priorP" +"\n";
+                s=s+ "plotNo "+ "acqdArea "+ "paidArea "+"priorY " + "priorP" +"\n";
                 while (!c.isAfterLast()) {
                    // list.add(cursor.getString(0));
 
