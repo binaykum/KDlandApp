@@ -236,8 +236,8 @@ public class DatabaseAccess {
 
     public String res3(String v) {
 
-        Cursor c4 = database.rawQuery("SELECT   _id, SUBSTR(villageName,1,6), khataNo,plotNo, paidArea, substr(CRno,5) FROM payment WHERE (  SUBSTR(claimantName,1,12)= '" + v + "')" , null);
-        Cursor c41 = database.rawQuery("SELECT   SUM(paidArea) FROM payment WHERE (  SUBSTR(claimantName,1,12)= '" + v + "')" , null);
+        Cursor c4 = database.rawQuery("SELECT   _id, SUBSTR(villageName,1,6), khataNo,plotNo, paidArea, substr(CRno,5) FROM payment WHERE (  SUBSTR(claimantName,1,18)= '" + v + "')" , null);
+        Cursor c41 = database.rawQuery("SELECT   SUM(paidArea) FROM payment WHERE (  SUBSTR(claimantName,1,18)= '" + v + "')" , null);
         int j = 0;
         String s = "";
         s="  "+v;
