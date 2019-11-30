@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Raiyat.RaiyatFragment">
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hello from raiyat fragment work in progress" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/act2"
+        android:layout_width="107dp"
+        android:layout_height="60dp"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:completionHint="plot No"
+        android:includeFontPadding="false"
+        android:inputType="number"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp"
+        android:visibility="visible"
+
+        />
+
+
+</FrameLayout>
