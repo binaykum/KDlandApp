@@ -10,8 +10,10 @@ import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
  */
 
 public class DatabaseOpenHelper extends SQLiteAssetHelper{
-    private static final String Database_name="lanKDCMP.db";
 
+ //   private static final String Database_name="lanKDCMP.db";
+  //  private static final String Database_name="landKDCMP.db";
+    private static final String Database_name="cbaCBCMP.db";
 
     public DatabaseOpenHelper(Context context) {
         super(context, Database_name, null, 1);

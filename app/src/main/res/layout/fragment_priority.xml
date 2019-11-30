@@ -4,8 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
     <TextView
-        android:id="@+id/text_notifications"
+        android:id="@+id/tv11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -19,12 +24,12 @@
 
     <AutoCompleteTextView
         android:id="@+id/act1"
+android:layout_below="@id/tv11"
         android:layout_width="107dp"
         android:layout_height="30dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="8dp"
+
         android:background="@android:color/darker_gray"
         android:backgroundTint="@android:color/holo_blue_light"
         android:completionHint="Yearwise priority"
@@ -42,5 +47,6 @@
 
         />
 
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

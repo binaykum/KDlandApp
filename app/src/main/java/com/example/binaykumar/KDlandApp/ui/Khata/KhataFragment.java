@@ -162,6 +162,8 @@ public class KhataFragment extends Fragment  implements View.OnClickListener , A
                 case R.id.btn1:
                     payment_details.setVisibility(View.INVISIBLE);
                     detailed.setVisibility(View.INVISIBLE);
+
+                    System.out.println( "output from cmabmo \n" + village_list.getSelectedItem().toString()+ input_plot_no.getText());
                     CharSequence message =((CharSequence) databaseAccess.res4((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
 
                     //   String message ="binay kumar";

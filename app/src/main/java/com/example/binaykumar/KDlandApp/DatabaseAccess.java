@@ -321,6 +321,7 @@ public class DatabaseAccess {
                 c1.moveToFirst();
                 c2.moveToFirst();
 
+
                 s= s + "villageName:-  "+ c.getString(c.getColumnIndex("villageName"))
                         +"\nkhataNo:-  "+ c.getString(c.getColumnIndex("khataNo"))
                         +"\nlandType:-  "+ c.getString(c.getColumnIndex("landType"))
@@ -340,7 +341,7 @@ public class DatabaseAccess {
                 //s=s+"(Row no-"+c.getString(0)+")";
                 s = s + "\nnoOfPlots:- " + String.valueOf(c.getCount());
                 s = s + "\nacqdArea:- " + c2.getString(0);
-                s = s + "\npaidArea:-" + c1.getString(0);
+                s = s + "\npaidArea:- " + c1.getString(0);
                 s = s + "\nnoOfCRsPaid:- " +  getCRnos1(v, p).size() ;
                 s = s + "\nnoOfClaimantsPaid:- " +  getClaimants1(v, p).size() ;
                 s = s + "\n\n";
@@ -350,18 +351,25 @@ public class DatabaseAccess {
                 while (!c.isAfterLast()) {
                    // list.add(cursor.getString(0));
 
+
+
+
                     s=s+ "  " +c.getString(c.getColumnIndex("plotNo"))+"     "
                         + c.getString(c.getColumnIndex("acqdArea"))+"     ";
+
                     String q= c.getString(c.getColumnIndex("plotNo"));
                     Cursor c3 = database.rawQuery("SELECT SUM(paidArea)  FROM payment WHERE (villageName= '" + v + "')" + " AND" + "(plotNo='" + q + "')", null);
                     c3.moveToFirst();
 
 
                     s=s+c3.getString(0)+ "    ";c3.close();
-                    s=s+c.getString(c.getColumnIndex("priorityYear"))+"     "
-                    + c.getString(c.getColumnIndex("priorityPurpose"))+"    "
-                    ;
+                    System.out.println (" columnnnmnnnnnnnnn"+c.getColumnCount());
+                    if (c.getColumnCount()>6) {
 
+                        s = s + c.getString(c.getColumnIndex("priorityYear")) + "     "
+                                + c.getString(c.getColumnIndex("priorityPurpose")) + "    "
+                        ;
+                    }
                     s=s+ "\n";
 
                     c.moveToNext();

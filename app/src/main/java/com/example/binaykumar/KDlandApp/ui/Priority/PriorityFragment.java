@@ -22,7 +22,7 @@ public class PriorityFragment extends Fragment {
         priorityViewModel =
                 ViewModelProviders.of(this).get(PriorityViewModel.class);
         View root = inflater.inflate(R.layout.fragment_priority, container, false);
-        final TextView textView = root.findViewById(R.id.text_notifications);
+        final TextView textView = root.findViewById(R.id.tv11);
         priorityViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
