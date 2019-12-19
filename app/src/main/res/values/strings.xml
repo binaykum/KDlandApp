@@ -7,5 +7,9 @@
 
     <string name="Raiyat">Raiyat</string>
     <!-- TODO: Remove or change this placeholder text -->
-
+    <string-array name="projAct">
+        <item>cbaCBCMP</item>
+        <item>cbaKDCMP</item>
+        <item>cbaPBCMP</item>
+    </string-array>
 </resources>
