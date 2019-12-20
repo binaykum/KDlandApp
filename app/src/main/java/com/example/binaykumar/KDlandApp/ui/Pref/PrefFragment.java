@@ -1,6 +1,8 @@
 package com.example.binaykumar.KDlandApp.ui.Pref;
 
+import android.app.Activity;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,10 +15,34 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.example.binaykumar.KDlandApp.R;
-
+import com.example.binaykumar.KDlandApp.ui.Plot.PlotFragment;
 
 
 public class PrefFragment extends Fragment  implements AdapterView.OnItemSelectedListener {
+
+
+    PlotFragment.OnMessage onMessage;
+
+    public  interface OnMessage {
+
+        public  void onMessageSent ( String message);
+
+
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        Activity activity =(Activity) context;
+        try {
+            onMessage= (PlotFragment.OnMessage) activity;
+        }catch ( ClassCastException e){
+            throw new ClassCastException(activity.toString()+"message from onAttach method");
+
+
+        }
+    }
+
 
     private PrefViewModel mViewModel;
     private Spinner projAct;
@@ -34,13 +60,13 @@ public class PrefFragment extends Fragment  implements AdapterView.OnItemSelecte
         Spinner projAct = (Spinner) root.findViewById(R.id.spn4);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity().getApplicationContext(),
-                R.array.projAct, android.R.layout.simple_spinner_item);
+                R.array.projectAct, android.R.layout.simple_spinner_item);
 // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 // Apply the adapter to the spinner
         projAct.setAdapter(adapter);
         projAct.setOnItemSelectedListener(this);
-
+       projAct.setPrompt(" select the project and act");
 return root;
     }
 
@@ -56,6 +82,9 @@ return root;
 
     actProj= parent.getSelectedItem().toString();
         System.out.println(actProj+"jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj");
+        String message=actProj;
+        onMessage.onMessageSent((String) message);
+
     }
 
     @Override
