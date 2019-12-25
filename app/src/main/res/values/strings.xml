@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">landCB</string>
+    <string name="title_activity_main3">Keredari Land MIS CBA Dec2019</string>
+    <string name="title_home">Plot</string>
+    <string name="title_dashboard">Khata</string>
+    <string name="title_notifications">Priority</string>
+
+    <string name="Raiyat">Raiyat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="projectAct">
+        <item>cbaCBCMP</item>
+        <item>cbaKDCMP</item>
+        <item>cbaPBCMP</item>
+    </string-array>
 </resources>

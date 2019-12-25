@@ -34,11 +34,11 @@
 
     <Spinner
         android:id="@+id/spn2"
-        android:layout_width="100dp"
+        android:layout_width="130dp"
         android:layout_height="33dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:background="@android:color/holo_orange_dark"
         android:visibility="visible"
         app:layout_constraintEnd_toStartOf="@+id/spn3"

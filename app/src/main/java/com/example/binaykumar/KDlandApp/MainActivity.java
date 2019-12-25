@@ -104,6 +104,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 payment_details.setVisibility(View.INVISIBLE);
                 detailed.setVisibility(View.INVISIBLE);
                 output.setText((CharSequence) databaseAccess.res((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
+
+
                 if (!databaseAccess.res((String) village_list.getSelectedItem().toString(), input_plot_no.getText()).contains("paidArea:-null")) {
                     payment_details.setVisibility(View.VISIBLE);
                     detailed.setVisibility(View.VISIBLE);

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">landCB</string>
+    <string name="title_activity_main3">landCB</string>
+    <string name="title_dashboard">landCB</string>
+    <string name="title_home">landCB</string>
+    <string name="title_notifications">landCB</string>
+
+    <string name="Raiyat">Raiyat</string>
+</resources>
