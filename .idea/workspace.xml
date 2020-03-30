@@ -176,15 +176,19 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="423" y="63" key="FileChooserDialogImpl" />
-    <state x="423" y="63" key="FileChooserDialogImpl/1920.1080" />
-    <state width="1220" height="160" key="GridCell.Tab.0.bottom" />
-    <state width="1220" height="160" key="GridCell.Tab.0.bottom/1920.1080" />
-    <state width="1220" height="160" key="GridCell.Tab.0.center" />
-    <state width="1220" height="160" key="GridCell.Tab.0.center/1920.1080" />
-    <state width="1220" height="160" key="GridCell.Tab.0.left" />
-    <state width="1220" height="160" key="GridCell.Tab.0.left/1920.1080" />
-    <state width="1220" height="160" key="GridCell.Tab.0.right" />
-    <state width="1220" height="160" key="GridCell.Tab.0.right/1920.1080" />
+    <state x="423" y="63" key="FileChooserDialogImpl" timestamp="1585577357916" />
+    <state x="423" y="63" key="FileChooserDialogImpl/1920.1080" timestamp="1585577357919" />
+    <state width="1220" height="160" key="GridCell.Tab.0.bottom" timestamp="1585577357919" />
+    <state width="1220" height="160" key="GridCell.Tab.0.bottom/1920.1080" timestamp="1585577357919" />
+    <state width="1220" height="160" key="GridCell.Tab.0.center" timestamp="1585577357919" />
+    <state width="1220" height="160" key="GridCell.Tab.0.center/1920.1080" timestamp="1585577357919" />
+    <state width="1220" height="160" key="GridCell.Tab.0.left" timestamp="1585577357919" />
+    <state width="1220" height="160" key="GridCell.Tab.0.left/1920.1080" timestamp="1585577357919" />
+    <state width="1220" height="160" key="GridCell.Tab.0.right" timestamp="1585577357919" />
+    <state width="1220" height="160" key="GridCell.Tab.0.right/1920.1080" timestamp="1585577357919" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1585577393244">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585577393244" />
   </component>
 </project>
