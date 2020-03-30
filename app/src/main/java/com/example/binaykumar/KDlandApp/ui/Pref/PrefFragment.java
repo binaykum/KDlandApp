@@ -14,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import com.example.binaykumar.KDlandApp.DatabaseOpenHelper;
 import com.example.binaykumar.KDlandApp.R;
 import com.example.binaykumar.KDlandApp.ui.Plot.PlotFragment;
 
@@ -84,6 +85,8 @@ return root;
         System.out.println(actProj+"jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj");
         String message=actProj;
         onMessage.onMessageSent((String) message);
+      //  this.=new DatabaseOpenHelper(Context);
+
 
     }
 

@@ -170,8 +170,9 @@ public class KhataFragment extends Fragment  implements View.OnClickListener , A
                     onMessage.onMessageSent((String) message);
 
                     // TODO:           output.setText((CharSequence) databaseAccess.res((String) village_list.getSelectedItem().toString(), input_plot_no.getText()));
+              //      if (!String.valueOf(message).contains("paidArea:-null")) {
 
-                    if (!databaseAccess.res4((String) village_list.getSelectedItem().toString(), input_plot_no.getText()).contains("paidArea:-null")) {
+                        if (!databaseAccess.res4((String) village_list.getSelectedItem().toString(), input_plot_no.getText()).contains("paidArea:- null")) {
                         payment_details.setVisibility(View.VISIBLE);
                         detailed.setVisibility(View.VISIBLE);
                     }
