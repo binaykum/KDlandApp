@@ -47,6 +47,27 @@ android:layout_below="@id/tv11"
 
         />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn5"
+            android:layout_below="@+id/act1"
+            android:layout_marginLeft="20dp"
+            android:text="Search"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/act1"
+            android:layout_marginLeft="150dp"
+            android:id="@+id/tvv"
+            />
+
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

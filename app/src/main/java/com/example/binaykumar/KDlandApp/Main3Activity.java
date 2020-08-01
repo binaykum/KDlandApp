@@ -14,6 +14,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.binaykumar.KDlandApp.ui.Plot.PlotFragment;
 import com.example.binaykumar.KDlandApp.ui.Result.ResultFragment;
 
+
 public class Main3Activity extends AppCompatActivity implements PlotFragment.OnMessage {
 
     @Override
